@@ -47,13 +47,13 @@ android {
             dimension = "env"
             applicationId = "com.example.githubsearchcompose"
             resValue("string", "app_name", "Github Search")
-            buildConfigField("String", "BASE_URL", "\"https://api.imgflip.com/\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
         }
         create("dev") {
             dimension = "env"
             applicationId = "com.example.githubsearchcompose.beta"
             resValue("string", "app_name", "Github Search - BETA")
-            buildConfigField("String", "BASE_URL", "\"https://api.imgflip.com/\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
         }
     }
     flavorDimensions += listOf("platform", "env")
